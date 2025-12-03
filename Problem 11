@@ -1,0 +1,9 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ofstream fout("report.txt");
+    fout << "File handling in C++ is easy!";
+    return 0;
+}
