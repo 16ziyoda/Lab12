@@ -1,0 +1,17 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main() {
+    ifstream fin("text.txt");
+
+    string line;
+    int cnt = 0;
+
+    while (getline(fin, line))
+        cnt++;
+
+    cout << cnt;
+    return 0;
+}
