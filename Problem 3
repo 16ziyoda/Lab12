@@ -1,0 +1,14 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ifstream fin("numbers.txt");
+    int x, mx = -1e9;
+
+    while (fin >> x)
+        if (x > mx) mx = x;
+
+    cout << mx;
+    return 0;
+}
