@@ -1,0 +1,14 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ifstream fin("data.txt");
+
+    int x, cnt = 0;
+    while (fin >> x)
+        if (x < 0) cnt++;
+
+    cout << cnt;
+    return 0;
+}
