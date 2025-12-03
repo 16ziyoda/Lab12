@@ -1,0 +1,14 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ifstream A("a.txt"), B("b.txt");
+    int x, cnt = 0;
+
+    while (A >> x) cnt++;
+    while (B >> x) cnt++;
+
+    cout << cnt;
+    return 0;
+}
